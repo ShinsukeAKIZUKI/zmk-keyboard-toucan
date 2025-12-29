@@ -6,11 +6,18 @@
 #define BASE 0
 #define FUNC  1
 #define NUM  2
-#define SYS  3
+#define MOJI  3
 #define MOUSE  4
 #define BT  5
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <3 4>;
+            then-layer = <5>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,8 +52,8 @@
             >;
         };
 
-        sys {
-            display-name = "SYS";
+        moji {
+            display-name = "MOJI";
             bindings = <
                 &kp TAB   &trans &kp F7 &kp F8 &kp F9 &kp F12   &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &trans &trans &kp BSPC
                 &kp LC(SPACE) &trans &kp F4 &kp F5 &kp F6 &kp F11   &trans       &trans      &trans       &trans &trans &trans

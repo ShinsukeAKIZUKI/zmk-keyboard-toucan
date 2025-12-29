@@ -23,25 +23,25 @@
             then-layer = <3>;
         };
     };
-     macros {
+
+    macros {
         to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            label = "TO_LAYER_0";
-            /* layer0へ戻してから、渡されたキー(例: LEFT_CONTROL)を流す */
-            bindings = <&to 0 &macro_param_1to1 &kp NO>;
+        compatible = "zmk,behavior-macro-one-param";
+        binding-cells = <1>;
+        label = "TO_LAYER_0";
+        bindings = <&to 0 &macro_param_1to1 &kp NO>;
         };
     };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_TAP_TO_0";
+        bindings = <&mo>, <&to_layer_0>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+        binding-cells = <2>;
+        tapping-term-ms = <200>;
+      };
     };
 
     keymap {

@@ -42,7 +42,7 @@ nice_view_spi: &spi0 {
     , <&gpio1 12 GPIO_ACTIVE_HIGH>
     ;
 };
-
+ 
 &glidepoint_listener {
     status = "okay";
 
@@ -58,7 +58,7 @@ nice_view_spi: &spi0 {
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
             &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 8
+            &zip_scroll_scaler 1 15
         >;
     };
 };

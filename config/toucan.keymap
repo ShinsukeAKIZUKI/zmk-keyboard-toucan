@@ -11,6 +11,14 @@
 #define BT  5
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        c_equal {
+          bindings = <&kp EQUAL>;
+          key-positions = <8 9>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";

@@ -48,7 +48,7 @@ nice_view_spi: &spi0 {
 
     /* 通常：カーソル移動 */
     input-processors = <
-        &zip_xy_scaler 2 1
+        &zip_xy_scaler 3 1
     >;
 
     /* MOJI(3) の時だけ：スクロール */

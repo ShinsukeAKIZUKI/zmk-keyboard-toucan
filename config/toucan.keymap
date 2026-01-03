@@ -16,9 +16,13 @@
     combos {
         compatible = "zmk,combos";
 
-        c_equal {
+        c_esc {
           bindings = <&kp ESC>;
           key-positions = <2 3>;
+        };
+        c_tab {
+          bindings = <&kp TAB>;
+          key-positions = <14 15>;
         };
     };
     behaviors {

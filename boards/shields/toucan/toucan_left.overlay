@@ -51,9 +51,9 @@ nice_view_spi: &spi0 {
         &zip_xy_scaler 2 1
     >;
 
-    /* MOUSE(4) の時だけ：スクロール */
+    /* MOJI(3) の時だけ：スクロール */
     mouse_layer_scroll {
-        layers = <4>;
+        layers = <3>;
 
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT

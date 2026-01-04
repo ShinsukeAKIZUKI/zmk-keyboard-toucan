@@ -24,6 +24,10 @@
           bindings = <&kp TAB>;
           key-positions = <14 15>;
         };
+        c_shift_tab {
+          bindings = <&kp TAB>;
+          key-positions = <15 16>;
+        };
     };
     behaviors {
         moji_ime: moji_ime {
@@ -67,7 +71,7 @@
             display-name = "NUM";
             bindings = <
                 &kp DEL &kp N1          &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
-                &kp RET &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+                &kp RET &trans   &trans &trans   &kp LA(F4)   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
                 &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
             >;
@@ -76,7 +80,7 @@
         moji {
             display-name = "MOJI";
             bindings = <
-                &kp TILDE   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp PLUS
+                &kp DEL   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp PLUS
                 &kp LC(SPACE) &trans &kp F4 &kp F5 &mkp MB1 &kp LC(SPACE)   &trans       &trans      &trans       &trans &trans &trans
                 &kp LSHFT &trans &kp F1 &kp F2 &kp F3 &kp F10   &trans       &trans      &trans       &trans &trans &trans
                                    &kp LGUI &mo FUNC &kp SPACE   &kp RET &mo 2 &kp RALT

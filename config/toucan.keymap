@@ -30,7 +30,7 @@
         };
         c_moji_ime {
           bindings = <&kp LC(SPACE)>;
-          key-positions = <13 14>;
+          key-positions = <26 27>;
         };
     };
     behaviors {

@@ -97,7 +97,7 @@
         mouse {
             display-name = "MOUSE";
             bindings = <
-                &mo DEL   &trans &trans &kp UP &kp PAGE_UP &kp PAGE_DOWN   &trans &kp HOME  &kp END &trans &trans &kp BSPC
+                &mo DEL   &trans &trans &kp UP &kp PAGE_UP &kp PAGE_DOWN   &trans &kp HOME  &kp END &trans &trans &kp DEL
                 &kp RET &trans &kp LEFT &kp DOWN &kp RIGHT &mkp MB1   &mkp MB3       &mkp MB2   &trans       &trans &trans &trans
                 &kp LSHFT &trans &kp LS(LEFT_ARROW) &trans &kp LS(RIGHT_ARROW) &trans   &mkp MB4       &mkp MB5      &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &trans
                                    &kp LGUI &trans &mo 5   &kp BSPC &mo 2 &kp RALT

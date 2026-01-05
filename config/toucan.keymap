@@ -28,6 +28,10 @@
           bindings = <&kp LS(TAB)>;
           key-positions = <15 16>;
         };
+        c_minus {
+          bindings = <&kp MINUS>;
+          key-positions = <20 21>;
+        };
         c_moji_ime {
           bindings = <&kp LC(SPACE)>;
           key-positions = <26 27>;
